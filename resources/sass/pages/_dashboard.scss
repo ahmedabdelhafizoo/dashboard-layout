@@ -1,0 +1,117 @@
+// discussion-list
+.discussion-list {
+  &__item {
+    display: flex;
+    gap: 15px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      min-width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $lightBlue;
+      object-fit: cover;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    &__date {
+      font-size: 11px;
+      opacity: .6;
+    }
+  }
+}
+
+// statistics-list
+.statistics-list {
+  &__item {
+    &__label {
+      font-weight: 600;
+      font-size: 22px;
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 16px;
+    }
+
+    &__icon {
+      font-size: 20px;
+      min-width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $lightBlue;
+      color: $blueColor;
+      display: flex;
+
+      i {
+        margin: auto;
+      }
+    }
+
+    $items: 1 #EAF4FE #389DFA,
+    2 #FCF4FB #B149C2,
+    3 #FFF9F4 #FF8904,
+    4 #F6FEF4 #24B07E;
+
+    @each $index,
+    $background,
+    $color in $items {
+      &:nth-child(#{$index}) &__icon {
+        background: $background;
+
+        i {
+          color: $color;
+        }
+      }
+    }
+  }
+}
+
+
+// top-referals
+.top-referals {
+  &__item {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    &__icon {
+      min-width: 40px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $lightBlue;
+      color: $blueColor;
+      display: flex;
+
+      i {
+        margin: auto;
+        font-size: 18px;
+      }
+    }
+
+    $items: 1 #EBF5FF #2099DD,
+    2 #EAFCFD #1D9DED,
+    3 #FEECEB #DC7A70,
+    4 #FFEDEC #FF0100;
+
+    @each $index,
+    $background,
+    $color in $items {
+      &:nth-child(#{$index}) &__icon {
+        background: $background;
+
+        i {
+          color: $color;
+        }
+      }
+    }
+  }
+}

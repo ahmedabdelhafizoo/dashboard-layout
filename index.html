@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="public/css/main.css">
+</head>
+
+<body class="custom-scrollbar">
+  <!-- app -->
+  <div class="app d-flex">
+    <!-- sidebar -->
+    <aside class="sidebar custom-scrollbar bg-white p-4" id="sidebar">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <h2 class="text-uppercase sidebar__logo mb-0">Logo</h2>
+        <a href="#" class="text-dark sidebar__toggle-icon d-lg-none"><i class="bi bi-x"></i></a>
+      </div>
+
+      <ul class="sidebar__links">
+        <li class="sidebar__links__item active">
+          <a href="#"><i class="bi bi-grid-fill"></i> Dashboard</a>
+        </li>
+        <li class="sidebar__links__item">
+          <a href="#"><i class="bi bi-file-earmark-minus-fill"></i> Blog Post</a>
+        </li>
+        <li class="sidebar__links__item">
+          <a href="#"><i class="bi bi-envelope-fill"></i> Message</a>
+        </li>
+        <li class="sidebar__links__item">
+          <a href="#"><i class="bi bi-file-bar-graph-fill"></i> Statistics</a>
+        </li>
+        <li class="sidebar__links__item">
+          <hr>
+        </li>
+        <li class="sidebar__links__item">
+          <a href="#"><i class="bi bi-gear-fill"></i> Setting</a>
+        </li>
+        <li class="sidebar__links__item">
+          <a href="#"><i class="bi bi-box-arrow-right"></i> Logout</a>
+        </li>
+      </ul>
+
+      <div class="sidebar__card p-4 text-center mt-3">
+        <i class="bi bi-file-earmark-plus-fill sidebar__card__icon"></i>
+        <h3 class="sidebar__card__title mb-2">New Draft</h3>
+        <small class="sidebar__card__desc d-block mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit.</small>
+        <button class="button w-100">Create File</button>
+      </div>
+    </aside>
+    <!-- end sidebar -->
+
+    <!-- page content -->
+    <main class="page-content flex-grow-1 p-4">
+      <div class="container">
+        <!-- header -->
+        <header class="header mb-4">
+          <div class="d-flex align-items-center">
+            <div class="col-lg-9 col me-2 me-sm-4 d-flex align-items-center">
+              <a href="#" class="sidebar__toggle-icon text-dark"><i class="bi bi-list me-3 d-lg-none"></i></a>
+              <input type="text" class="form__input form__input--search" placeholder="Search Now">
+            </div>
+            <div class="col-lg-3 d-flex align-items-center">
+              <a href="#" class="header__notification me-3 me-sm-4">
+                <i class="bi bi-bell-fill"></i>
+                <small>3</small>
+              </a>
+              <a href="#" class="header__user d-flex align-items-center">
+                <img
+                  src="https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg"
+                  alt="user image" class="header__user__img">
+                <strong class="header__user__name ms-3 d-none d-sm-block"><small>Hi, Ahmed</small></strong>
+              </a>
+            </div>
+          </div>
+        </header>
+        <!-- end header -->
+
+        <div class="row">
+          <div class="col-xxl-9">
+            <!-- statistics-list -->
+            <div class="statistics-list">
+              <div class="row">
+                <!-- statistics-list__item -->
+                <div class="col-md-6 col-xl-3 statistics-list__item mb-4">
+                  <div class="page-card py-3 d-flex align-items-center">
+                    <div>
+                      <p class="statistics-list__item__label mb-2">720</p>
+                      <h2 class="statistics-list__item__title mb-0">Subscribers</h2>
+                    </div>
+                    <div class="statistics-list__item__icon ms-auto">
+                      <i class="bi bi-eye-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- end statistics-list__item -->
+
+                <!-- statistics-list__item -->
+                <div class="col-md-6 col-xl-3 statistics-list__item mb-4">
+                  <div class="page-card py-3 d-flex align-items-center">
+                    <div>
+                      <p class="statistics-list__item__label mb-2">800</p>
+                      <h2 class="statistics-list__item__title mb-0">Post</h2>
+                    </div>
+                    <div class="statistics-list__item__icon ms-auto">
+                      <i class="bi bi-file-earmark-plus-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- end statistics-list__item -->
+
+                <!-- statistics-list__item -->
+                <div class="col-md-6 col-xl-3 statistics-list__item mb-4">
+                  <div class="page-card py-3 d-flex align-items-center">
+                    <div>
+                      <p class="statistics-list__item__label mb-2">900</p>
+                      <h2 class="statistics-list__item__title mb-0">Pages</h2>
+                    </div>
+                    <div class="statistics-list__item__icon ms-auto">
+                      <i class="bi bi-file-earmark-minus-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- end statistics-list__item -->
+
+                <!-- statistics-list__item -->
+                <div class="col-md-6 col-xl-3 statistics-list__item mb-4">
+                  <div class="page-card py-3 d-flex align-items-center">
+                    <div>
+                      <p class="statistics-list__item__label mb-2">720</p>
+                      <h2 class="statistics-list__item__title mb-0">Comments</h2>
+                    </div>
+                    <div class="statistics-list__item__icon ms-auto">
+                      <i class="bi bi-chat-dots"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- end statistics-list__item -->
+              </div>
+            </div>
+            <!-- end statistics-list -->
+
+            <div class="row">
+              <!-- top-referals -->
+              <div class="col-md-5">
+                <div class="page-card h-100 top-referals">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h2 class="page-card__title mb-0">Top Referals</h2>
+                    <a href="#" class="text-muted"><small>View All</small></a>
+                  </div>
+
+                  <div class="top-referals__list">
+                    <!-- top-referals__item -->
+                    <div class="top-referals__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="top-referals__item__icon me-3">
+                          <i class="bi bi-facebook"></i>
+                        </div>
+                        <p class="mb-0 top-referals__item__title">Facebook</p>
+                      </div>
+                      <small class="fw-bold">200</small>
+                    </div>
+                    <!-- end top-referals__item -->
+
+                    <!-- top-referals__item -->
+                    <div class="top-referals__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="top-referals__item__icon me-3">
+                          <i class="bi bi-twitter"></i>
+                        </div>
+                        <p class="mb-0 top-referals__item__title">Twitter</p>
+                      </div>
+                      <small class="fw-bold">200</small>
+                    </div>
+                    <!-- end top-referals__item -->
+
+                    <!-- top-referals__item -->
+                    <div class="top-referals__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="top-referals__item__icon me-3">
+                          <i class="bi bi-google"></i>
+                        </div>
+                        <p class="mb-0 top-referals__item__title">Google</p>
+                      </div>
+                      <small class="fw-bold">200</small>
+                    </div>
+                    <!-- end top-referals__item -->
+
+                    <!-- top-referals__item -->
+                    <div class="top-referals__item d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <div class="top-referals__item__icon me-3">
+                          <i class="bi bi-youtube"></i>
+                        </div>
+                        <p class="mb-0 top-referals__item__title">Youtube</p>
+                      </div>
+                      <small class="fw-bold">200</small>
+                    </div>
+                    <!-- end top-referals__item -->
+                  </div>
+                </div>
+              </div>
+              <!-- end top-referals -->
+
+              <!-- Viewers -->
+              <div class="col-md-7 mt-4 mt-md-0">
+                <div class="page-card h-100">
+                  <h2 class="page-card__title mb-4">Viewers</h2>
+                  <img src="public/images/viewers.png" alt="viewers image" class="d-block mx-auto">
+                </div>
+              </div>
+              <!-- end Viewers -->
+            </div>
+          </div>
+          <div class="col-xxl-3 mt-4 mt-xxl-0">
+            <div class="row">
+              <!-- discussion list -->
+              <div class="col-md-5 col-xxl-12 mb-4">
+                <div class="page-card h-100 discussion-list">
+                  <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h2 class="page-card__title mb-0">Discussion</h2>
+                    <a href="#" class="text-muted"><small>View All</small></a>
+                  </div>
+                  <!-- discussion list item -->
+                  <div class="discussion-list__item d-flex align-items-center">
+                    <img class="discussion-list__item__img"
+                      src="https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg"
+                      alt="user image">
+                    <div class="discussion-list__item__content pt-2">
+                      <h3 class="discussion-list__item__title mb-0">Ahmed Mohamed</h3>
+                      <small class="discussion-list__item__date">Aug. 1 1996</small>
+                    </div>
+                    <a href="#" class="text-muted ms-auto"><i class="bi bi-three-dots-vertical"></i></a>
+                  </div>
+                  <!-- discussion list item -->
+
+                  <!-- discussion list item -->
+                  <div class="discussion-list__item d-flex align-items-center">
+                    <img class="discussion-list__item__img"
+                      src="https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg"
+                      alt="user image">
+                    <div class="discussion-list__item__content pt-2">
+                      <h3 class="discussion-list__item__title mb-0">Ahmed Mohamed</h3>
+                      <small class="discussion-list__item__date">Aug. 1 1996</small>
+                    </div>
+                    <a href="#" class="text-muted ms-auto"><i class="bi bi-three-dots-vertical"></i></a>
+                  </div>
+                  <!-- discussion list item -->
+
+                  <!-- discussion list item -->
+                  <div class="discussion-list__item d-flex align-items-center">
+                    <img class="discussion-list__item__img"
+                      src="https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg"
+                      alt="user image">
+                    <div class="discussion-list__item__content pt-2">
+                      <h3 class="discussion-list__item__title mb-0">Ahmed Mohamed</h3>
+                      <small class="discussion-list__item__date">Aug. 1 1996</small>
+                    </div>
+                    <a href="#" class="text-muted ms-auto"><i class="bi bi-three-dots-vertical"></i></a>
+                  </div>
+                  <!-- discussion list item -->
+
+                  <!-- discussion list item -->
+                  <div class="discussion-list__item d-flex align-items-center">
+                    <img class="discussion-list__item__img"
+                      src="https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg"
+                      alt="user image">
+                    <div class="discussion-list__item__content pt-2">
+                      <h3 class="discussion-list__item__title mb-0">Ahmed Mohamed</h3>
+                      <small class="discussion-list__item__date">Aug. 1 1996</small>
+                    </div>
+                    <a href="#" class="text-muted ms-auto"><i class="bi bi-three-dots-vertical"></i></a>
+                  </div>
+                  <!-- discussion list item -->
+
+                  <!-- discussion list item -->
+                  <div class="discussion-list__item d-flex align-items-center">
+                    <img class="discussion-list__item__img"
+                      src="https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg"
+                      alt="user image">
+                    <div class="discussion-list__item__content pt-2">
+                      <h3 class="discussion-list__item__title mb-0">Ahmed Mohamed</h3>
+                      <small class="discussion-list__item__date">Aug. 1 1996</small>
+                    </div>
+                    <a href="#" class="text-muted ms-auto"><i class="bi bi-three-dots-vertical"></i></a>
+                  </div>
+                  <!-- discussion list item -->
+                </div>
+              </div>
+              <!-- end discussion list -->
+              <!-- progress -->
+              <div class="col-md-7 col-xxl-12">
+                <div class="page-card h-100">
+                  <h2 class="page-card__title mb-4">Users By Device</h2>
+                  <img src="public/images/progress.png" alt="progress image" class="d-block mx-auto">
+                </div>
+              </div>
+              <!-- end progress -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end page content -->
+  </div>
+  <!-- end app -->
+
+  <script src="public/js/main.js"></script>
+</body>
+
+</html>

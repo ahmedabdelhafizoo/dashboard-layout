@@ -1,0 +1,36 @@
+// custom-scrollbar
+.custom-scrollbar {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: rgb(189, 187, 187);
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgb(136, 135, 135);
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+
+.page-card {
+  background: #fff;
+  box-shadow: 0 0 50px rgba(#000, .06);
+  padding: 20px;
+  border-radius: 15px;
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 16px;
+  }
+}
